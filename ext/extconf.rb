@@ -1,7 +1,19 @@
 require 'mkmf'
 
-# mysql-replication-listener
-dir_config('replication')
+HEADER_DIRS = [
+  '/usr/local/include',
+  '/usr/include',
+  '/usr/local/opt/openssl/include'
+]
+
+LIB_DIRS = [
+  '/usr/local/lib',
+  '/usr/lib',
+  '/usr/local/opt/openssl/lib'
+]
+
+
+dir_config('replication',HEADER_DIRS,LIB_DIRS)
 
 case explicit_rpath = with_config('replication-rpath')
 when true
