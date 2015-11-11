@@ -1,5 +1,7 @@
 require 'mkmf'
 
+$CFLAGS << '-O0 -ggdb'
+
 HEADER_DIRS = [
   '/usr/local/include',
   '/usr/include',
