@@ -1,6 +1,6 @@
 require 'mkmf'
 
-$CFLAGS << '-O0 -ggdb'
+$CXXFLAGS << '-O0 -ggdb'
 
 HEADER_DIRS = [
   '/usr/local/include',
